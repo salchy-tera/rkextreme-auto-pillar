@@ -62,7 +62,7 @@ let del5_2_timeout = null
 				mod.command.message("Pillar 3 set to: " + p3)
 				break
 				case "4":
-				p1 = !p1
+				p4 = !p4
 				mod.command.message("Pillar 4 set to: " + p4)
 				break
 				case "5":
@@ -174,7 +174,7 @@ let del5_2_timeout = null
 							w: packet_loc.w
 						})
 					}, del4_1)					
-					del4_1_timeout = setTimeout(function () {
+					del4_2_timeout = setTimeout(function () {
 						mod.send('C_CONTACT_WORKOBJECT', 1, {
 							gameId: event.gameId
 							
