@@ -2,7 +2,7 @@ module.exports = function Pillars(mod) {
 
 const path = require('path');
 mod.dispatch.addDefinition('C_CONTACT_WORKOBJECT', 1, path.join(__dirname, 'C_CONTACT_WORKOBJECT.1.def'));
-let enabled = false
+let enabled = true
 let cid	
 let pillar_1 = 303405
 let pillar_2 = 303406
@@ -15,11 +15,11 @@ let packet_3 = null
 let packet_4 = null
 let packet_5 = null
 let packet_loc
-let p1 = false
-let p2 = false
-let p3 = false
-let p4 = false
-let p5 = false
+let p1 = true
+let p2 = true
+let p3 = true
+let p4 = true
+let p5 = true
 let del1_1 = null
 let del1_2 = null
 let del2_1 = null
@@ -75,6 +75,11 @@ let del5_2_timeout = null
 			mod.command.message("Set a value from 1 to 5")
 		}
 	})
+	
+	mod.hook('S_LOGIN', 14, event => {
+		cid = event.gameId;
+	})
+	
 	mod.hook('S_LOAD_TOPO', 3, event => {
 		clearTimeout(del1_1_timeout)
 		clearTimeout(del1_2_timeout)
