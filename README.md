@@ -1,6 +1,8 @@
 # rkextreme-auto-pillar
 Auto contact pillars as soon as they spawn on RK9 extreme last boss.
 
+OPCODE as for version 381290 -> C_CONTACT_WORKOBJECT = 47128
+
 Disabled by default, type pillar to enable the mod.
 
 You can decide which pillars to auto contact, type setpillar and a value from 1 to 5.
