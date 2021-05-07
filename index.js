@@ -217,7 +217,7 @@ let del5_2_timeout = null
 							del3_2 = 4200
 					}
 					if((p1 && !p2 && p3) || 
-						(!p1 && p2 && p3) {
+						(!p1 && p2 && p3)) {
 							del3_1 = 2000
 							del3_2 = 2200
 					}
@@ -241,7 +241,7 @@ let del5_2_timeout = null
 							del4_1 = 2000
 							del4_2 = 2200
 					}
-					if((!p1 && !p2 && !p3 && p4) {
+					if(!p1 && !p2 && !p3 && p4) {
 							del4_1 = 0
 							del4_2 = 200
 					}
